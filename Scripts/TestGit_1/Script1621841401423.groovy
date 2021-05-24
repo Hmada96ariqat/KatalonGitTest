@@ -17,3 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+driver = WebUI
+
+driver.sendKeys(findTestObject('Object Repository/TestGit_1/Page_Login Page/input_Sign in as a power user_TextBoxUserName'), 'administrator')
+driver.sendKeys(findTestObject('Object Repository/TestGit_1/Page_Login Page/input_Sign in as a power user_TextBoxPassword'), 'Admin123')
+driver.click(findTestObject('Object Repository/TestGit_1/Page_Login Page/input_Please type your email address_ButtonSignIn'))
